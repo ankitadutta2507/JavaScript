@@ -25,3 +25,13 @@ console.log(typeof newVariable);
 newVariable=1;
 console.log(typeof newVariable);
 
+
+//Use typeof to find the data type of the resulting value when you concatenate variables containing two different data types.
+
+let x="Hi"
+let y=5;
+let z="true"
+
+n=x+y+z;
+console.log(n);
+console.log(typeof n)
