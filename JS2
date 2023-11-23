@@ -5,3 +5,7 @@ console.log(Number.isInteger(2017));
 let changeMe=true;
 changeMe=false; //changing
 console.log(changeMe);
+
+let myName='Ankita';
+let myCity="Kalna";
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`);  //String Interpolation
