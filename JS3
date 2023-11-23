@@ -1,0 +1,33 @@
+let x=prompt("Enter age: "); //if-else condition
+if(x>=18){
+console.log("You can vote");
+} else{
+console.log("You Can not Vote");
+}
+
+let x = prompt("Enter number: ");  //if-elseif-else 
+if (x > 15) {
+  console.log("x is greater than 15");
+} else if (x > 10) {
+  console.log("x is greater than 10 but less than or equal to 15");
+} else if (x > 5) {
+  console.log("x is greater than 5 but less than or equal to 10");
+} else {
+  console.log("x is less than or equal to 5");
+}
+
+
+let x = prompt("Enter number: "); // switch-case
+switch (x) {
+  case "apple":
+    console.log("x is an apple");
+    break;
+  case "banana":
+    console.log("x is a banana");
+    break;
+  case "orange":
+    console.log("x is an orange");
+    break;
+  default:
+    console.log("x is something else");
+}
