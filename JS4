@@ -1,0 +1,4 @@
+let excited = true;
+console.log(!excited);
+let sleepy = false;
+console.log(!sleepy);
