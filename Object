@@ -1,0 +1,35 @@
+let spaceship = {
+  homePlanet: 'Earth',
+  color: 'silver',
+  'Fuel Type': 'Turbo Fuel',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+let crewCount=spaceship.numCrew;
+let planetArray=spaceship.flightPath;
+let isActive=spaceship['Active Mission'];
+
+let propName =  'Active Mission';
+console.log(spaceship[propName]);
+
+const spaceship = {type: 'shuttle'};
+spaceship = {type: 'alien'}; // TypeError: Assignment to constant variable.
+spaceship.type = 'alien'; // Changes the value of the type property
+spaceship.speed = 'Mach 5'; // Creates a new key of 'speed' with a value of 'Mach 5'
+
+delete spaceship.homePlanet;
+console.log(spaceship);
+
+spaceship.color='glorious gold';
+console.log(spaceship);
+
+spaceship.numEngines=7;
+console.log(spaceship);
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+delete spaceship['Secret Mission'];
