@@ -1,0 +1,38 @@
+//Example: Truthy and Falsy Values
+let userRole = ""; // An empty string is falsy
+
+let roleMessage = userRole || "User";
+
+console.log("You are a " + roleMessage); // If `userRole` is falsy, default to "User"
+
+
+//Form Validation
+let username = "JohnDoe";
+let password = "secretp@ss";
+
+if (username && password) {
+  console.log("Form submitted successfully.");
+} else {
+  console.log("Please enter both username and password.");
+}
+
+//Responsive UI
+let screenWidth = 800;
+
+if (screenWidth > 600 && screenWidth <= 1024) {
+  console.log("Displaying a tablet-friendly layout.");
+} else if (screenWidth > 1024) {
+  console.log("Displaying a desktop layout.");
+} else {
+  console.log("Displaying a mobile-friendly layout.");
+}
+
+//Access Control
+let userRole = "admin";
+let isLoggedIn = true;
+
+if (userRole === "admin" && isLoggedIn) {
+  console.log("Access granted to admin dashboard.");
+} else {
+  console.log("Access denied.");
+}
