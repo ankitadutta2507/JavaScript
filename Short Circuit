@@ -1,0 +1,12 @@
+//Short-Circuit with && Operator
+let isTrue = false;
+let result = isTrue && someFunction();
+
+console.log(result); // `someFunction()` is not called if `isTrue` is false
+
+//Short-Circuit with || Operator
+
+let isLoggedIn = false;
+let username = isLoggedIn || "Guest";
+
+console.log("Welcome, " + username); // If not logged in, the default username is "Guest"
