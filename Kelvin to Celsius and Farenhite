@@ -1,6 +1,0 @@
-let t = prompt("Enter temp in Kelvin");
-let k = parseFloat(t);
-let c=k-273.15;
-let f = (k - 273.15) * (9/5) + 32
-console.log(`Temperature in Celsius: ${c}`);
-console.log(`Temperature in Farenhite: ${f}`);
