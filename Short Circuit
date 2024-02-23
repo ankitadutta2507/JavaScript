@@ -10,3 +10,11 @@ let isLoggedIn = false;
 let username = isLoggedIn || "Guest";
 
 console.log("Welcome, " + username); // If not logged in, the default username is "Guest"
+
+
+let tool = 'marker';
+
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let writingUtensil= tool || 'pen'
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
