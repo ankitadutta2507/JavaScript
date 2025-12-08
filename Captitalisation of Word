@@ -1,0 +1,5 @@
+var a= prompt("Enter your name");
+let a0= a[0].toUpperCase();
+let an= a.slice(1,).toLowerCase();
+
+alert(a0+an);
