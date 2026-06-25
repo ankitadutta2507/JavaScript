@@ -1,0 +1,12 @@
+//Keep adding numbers to the array in until 0 is added to the array
+
+let num = [1, 2, 3, 4, 5];
+alert(`Your array is: ${num}`);
+let newNumber;
+while (newNumber!=0){
+    newNumber = Number.parseInt(prompt("Add a number to array: "));
+    num.push(newNumber);
+    // alert(`Your array is: ${num}`);
+}
+
+alert(`Program stops, Final array is ${num}`);
