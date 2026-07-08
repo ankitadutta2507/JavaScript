@@ -1,3 +1,7 @@
+//Problem 5: Second Largest
+//Return the second largest number in an array without using sort().
+
+
 function findSecondLargest(arr) {
   if (arr.length < 2) return undefined;
 
