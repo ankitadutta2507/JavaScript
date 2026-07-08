@@ -1,6 +1,6 @@
 function pairElement(string){
   let resultArr = [];
-  for (let i =0 ; i <= string.length; i++){
+  for (let i =0 ; i < string.length; i++){
     
     if (string[i] == "A"){
       resultArr.push(["A","T"]);
