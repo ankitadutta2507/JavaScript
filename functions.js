@@ -1,90 +1,104 @@
-// Write a function that checks whether a number is prime.
-function checkPrime(num) {
-    if (num < 2) {
-        return false;
-    }
+/* 
+1. Write a function named `makeTea` that takes one parameter, `typeOfTea`, and returns a string like `"Making green tea"` when called with `"green tea"`. 
+Store the result in a variable named `teaOrder`.
+*/
 
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) {
-            return false;
-        }
-    }
+// function makeTea(typeOfTea) {
+//   return `Making ${typeOfTea}`;
+// }
+// let teaOrder = makeTea("Lemon tea");
+// console.log(teaOrder);
+// function makeTea(typeOfTea) {
+//   return `Making ${typeOfTea}`;
+//   console.log(test);
+// }
+// let teaOrder = makeTea("lemon tea");
+// console.log(teaOrder);
 
-    return true;
-}
+/* 
+2. Create a function named `orderTea` that takes one parameter, `teaType`. Inside this function, create another function named `confirmOrder` that returns a message like `"Order confirmed for chai"`. 
+Call `confirmOrder` from within `orderTea` and return the result.
+*/
 
-let n = Number(prompt("Enter the number to check prime or not"));
-console.log(checkPrime(n));
-//_______________________________________________________________________________________________________
-// Write a function that returns the factorial.
+// function orderTea(teaType) {
+//   function confirmOrder() {
+//     return `Order confirmed for ${teaType}`;
+//   }
+//   return confirmOrder();
+// }
+// let orderConfirmation = orderTea("green tea");
+// console.log(orderConfirmation);
 
-function factorial(num) {
-    let fact = 1;
-    for (let i = 1; i<=num; i++) {
-        fact *= i;
-    }
-    return fact;
-}
+// function orderTea(teaType) {
+//   function confirmOrder() {
+//     return `Order confirmed for chai`;
+//   }
+//   return confirmOrder();
+// }
 
-let n = Number(prompt("Enter a number:"));
-factorial(n);
-//_______________________________________________________________________________________________________
-// Write a function that returns the largest element of an array.
+// let orderConfirmation = orderTea("chai");
+// // console.log(orderConfirmation);
 
-function findLargest(arr){
-    let largestNum = arr[0];
-    for (let num of arr){
-    if (num > largestNum) {
-        largestNum = num;
-    }
-}
-console.log(`Largest number of [${arr}] is ${largestNum}`);
-}
+/* 
+3. Write an arrow function named `calculateTotal` that takes two parameters: `price` and `quantity`. The function should return the total cost by multiplying the `price` and `quantity`. 
+Store the result in a variable named `totalCost`.
+*/
 
-let noOfElements = Number(prompt("Enter how many elements of array do you want?"));
-let arr = [];
+// const calculateTotal = (price, quantity) => price * quantity;
 
-while (arr.length < noOfElements){
-    let newElement = Number(prompt(`Add Element ${arr.length+1}:`));
-    arr.push(newElement);
-    
-}
-findLargest(arr);
-//_______________________________________________________________________________________________________
-// Write a function that accepts an array and returns only even numbers.
+// const totalCost = calculateTotal(499, 100);
+// console.log(totalCost);
 
-function filterEvens(array){
-    let evenArray =[];
-    for (let num of array){
-        if (num % 2 === 0){
-            evenArray.push(num);
-        }
-    }
-    return evenArray;
-}
-let csvString = prompt("Enter all the array items separated by comma");
-const array = csvString.split(",").map(Number);
-console.log(filterEvens(array));
-//_______________________________________________________________________________________________________
-// Write a function that accepts a string and returns the number of vowels.
-let str = prompt("Enter a string of your choice").toLowerCase();
+/* 
+4. Write a function named `processTeaOrder` that takes another function, `makeTea`, as a parameter and calls it with the argument `"earl grey"`. 
+Return the result of calling `makeTea`.
+*/
 
-function countVowels(string) {
-    let vowelCount = 0;
+// function processTeaOrder(makeTea) {
+//   return makeTea("earl grey");
+// }
 
-    for (let letter of string) {
-        if (
-            letter === "a" ||
-            letter === "e" ||
-            letter === "i" ||
-            letter === "o" ||
-            letter === "u"
-        ) {
-            vowelCount++;
-        }
-    }
+// function makeTea(name) {
+//   return `${name} is making tea`;
+// }
 
-    return vowelCount;
-}
+// console.log(processTeaOrder(makeTea));
+//-------------------------------------------------
+// function makeTea(typeOfTea) {
+//   return `maketea: ${typeOfTea}`;
+// }
 
-console.log(countVowels(str));
+// function processTeaOrder(teaFunction) {
+//   return teaFunction("earl grey");
+// }
+
+// let order = processTeaOrder(makeTea);
+// // console.log(order);
+
+/* 
+5. Write a function named `createTeaMaker` that returns another function. The returned function should take one parameter, `teaType`, and return a message like `"Making green tea"`. 
+Store the returned function in a variable named `teaMaker` and call it with `"green tea"`.
+*/
+
+// function createTeaMaker() {
+//   return anotherFunc;
+// }
+
+// function anotherFunc(teaType) {
+//   return `Making ${teaType}`;
+// }
+
+// const teaMaker = createTeaMaker();
+
+// console.log(teaMaker("green tea"));
+//--------------------------------------
+// function createTeaMaker(name) {
+//   let score = 100;
+//   return function (teaType) {
+//     return `Making ${teaType} ${name} ${score}`;
+//   };
+// }
+
+// let teaMaker = createTeaMaker("hitesh");
+// let result = teaMaker("green tea");
+// console.log(result);
